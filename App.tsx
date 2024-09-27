@@ -5,7 +5,7 @@ import { HomeScreen } from './src/presentation/screens/HomeScreen';
 export const App = () => {
   return (
     <SafeAreaView>
-      <HomeScreen/>
+      <HomeScreen name="Rinel iniguez"/>
     </SafeAreaView>
   );
 };
