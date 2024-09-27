@@ -1,10 +1,13 @@
 import React from 'react';
 import { View,Text,StyleSheet } from 'react-native';
 
-export const HomeScreen = () => {
+interface HomeProps {
+    name?:string
+}
+export const HomeScreen = ({name}:HomeProps) => {
   return (
     <View style={styles.container}>
-        <Text style={styles.title}>HomeScreen</Text>
+        <Text style={styles.title}>Hola, {name}</Text>
     </View>
   );
 };
