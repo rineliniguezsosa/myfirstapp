@@ -4,7 +4,7 @@ import { HomeScreen } from './src/presentation/screens/HomeScreen';
 
 export const App = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex:1}}>
       <HomeScreen name="Rinel iniguez"/>
     </SafeAreaView>
   );
