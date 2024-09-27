@@ -1,10 +1,18 @@
-import React from 'react';
-import { View,Text,StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View,Text,StyleSheet,Button } from 'react-native';
+
 
 export const CounterScreen = () => {
+    const [counter, setcounter] = useState(0);
+
+    const handleIncrement = ()=>{
+      setcounter(prevState => prevState + 1);
+    };
   return (
-    <View style={styles.container}> 
-        <Text style={styles.title}>CounterScreen</Text>
+    <View style={styles.container}>
+        <Text style={styles.title}>{counter}</Text>
+
+        <Button onPress={handleIncrement} title="+1"/>
     </View>
   );
 };
