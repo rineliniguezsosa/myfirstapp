@@ -12,7 +12,7 @@ export const CounterScreen = () => {
     <View style={styles.container}>
         <Text style={styles.title}>{counter}</Text>
 
-        <Pressable onPress={() => setcounter(prevState=> prevState + 1)}>
+        <Pressable style={styles.button} onPress={() => setcounter(prevState=> prevState + 1)}>
             <Text>+1</Text>
         </Pressable>
     </View>
@@ -29,5 +29,11 @@ const styles = StyleSheet.create({
         fontSize:80,
         color:'black',
         fontWeight:800,
+    },
+    button:{
+        backgroundColor:'#5856D6',
+        paddingHorizontal:20,
+        paddingVertical:10,
+        borderRadius:10,
     },
 });
