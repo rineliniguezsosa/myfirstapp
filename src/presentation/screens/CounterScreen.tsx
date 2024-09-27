@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, { useState } from 'react';
 import { View,Text,StyleSheet,Pressable,Platform } from 'react-native';
 
@@ -12,13 +13,13 @@ export const CounterScreen = () => {
     <View style={styles.container}>
         <Text style={styles.title}>{counter}</Text>
 
-        <Pressable 
+        <Pressable
             style={({pressed})=>[
                 styles.button,
-                pressed && styles.buttonPressed
-            ]} 
+                pressed && styles.buttonPressed,
+            ]}
             onPress={() => setcounter(prevState=> prevState + 1)}>
-            <Text>+1</Text>
+            <Text style={{color:Platform.OS === 'android' ? 'white' : '#4746AB'}}>+1</Text>
         </Pressable>
     </View>
   );
