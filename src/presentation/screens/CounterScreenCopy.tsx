@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View,Text } from 'react-native';
 import { FAB } from 'react-native-paper';
 import { globalStyles } from '../../styles/global.styles';
-import { IconAddOutline } from '../../assets';
+// import { IconAddOutline } from '../../assets';
 
 
 export const CounterScreenCopy = () => {
@@ -11,13 +11,11 @@ export const CounterScreenCopy = () => {
     <View style={globalStyles.centerContainer}>
         <Text style={globalStyles.title}>{counter}</Text>
 
-        <IconAddOutline/>
-
         <FAB
-            label="+1"
             onPress={() => setcounter(prevState=> prevState + 1)}
             onLongPress={()=> setcounter(0)}
             style={globalStyles.fab}
+            icon="add"
         />
     </View>
   );
