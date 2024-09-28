@@ -6,13 +6,16 @@ import { SafeAreaView } from 'react-native';
 import { PaperProvider } from 'react-native-paper';
 import { CounterScreenCopy } from './src/presentation/screens/CounterScreenCopy';
 
+import IonIcon from 'react-native-vector-icons/Ionicons';
 
 export const App = () => {
   return (
-    <SafeAreaView style={{flex:1}}>
-      <PaperProvider>
-        <CounterScreenCopy/>
-      </PaperProvider>
-    </SafeAreaView>
+    <PaperProvider settings={{
+      icon: (props) => <IonIcon { ...props } />,
+    }}>
+        <SafeAreaView style={{flex:1}}>
+          <CounterScreenCopy/>
+        </SafeAreaView>
+    </PaperProvider>
   );
 };
