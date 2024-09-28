@@ -11,4 +11,10 @@ export const globalStyles = StyleSheet.create({
         fontWeight:'300',
         color:'black',
     },
+    fab: {
+      position: 'absolute',
+      margin: 16,
+      right: 0,
+      bottom: 0,
+    },
 });
