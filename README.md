@@ -24,6 +24,7 @@ In order to run this project, you must have the following elements installed:
    ```
 
 3. **Install Android Studio**
+
    Download and install Android Studio from [here](https://developer.android.com/studio)
 
    Set up a virtual device (emulator) or connect a physical Android device.
