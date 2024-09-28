@@ -33,3 +33,28 @@ In order to run this project, you must have the following elements installed:
 4. **Install Java 17**
    
    Make sure you have Java version 17 installed. You can download it from [here](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+
+## Clone the Repository
+
+   Clone the project from GitHub using the following command:
+
+   ```sh
+      git clone https://github.com/rineliniguezsosa/myfirstapp.git
+   ```
+   Then, navigate to the project directory:
+
+   ```sh
+   cd myfirstapp
+   ```
+## Installation of Dependencies
+   Install the project dependencies using npm:
+
+   ```sh
+   npm install 
+   ```
+## Run the Application
+   To run the app on an Android device or emulator, make sure the emulator is running or the device is connected, and then run:
+
+   ```sh
+   npx react-native run-android
+   ```
